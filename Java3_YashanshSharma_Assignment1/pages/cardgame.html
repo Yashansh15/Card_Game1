@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div>
+        <marquee id="first" direction="right" behavior="alternate">
+            <h3>Game Of Cards</h3>
+        </marquee>
+    </div>
+    <div class="grid-container-element">
+        <div class="grid-child-element purple">
+            <div> Player 1</div>
+            <br><br>
+            <div class="flex">
+                <div class="i">
+                    <img class="ii1" id="img" name=DIAMONDSIX.png src="img/i.png" onclick="cimage1(this)">
+                </div>
+                <div class="i">
+                    <img class="ii1" name=HEARTSEVEN.png src="img/i.png" onclick="cimage1(this)">
+                </div>
+                <div class="i">
+                    <img class="ii1" name=CLUBSIX.png src="img/i.png" onclick="cimage1(this)">
+                </div>
+            </div>
+           <br> <button id="g" onclick="disphigh1()" disabled>Show Highest Card</button>
+            <br>
+            <div id="score1" name=22 > Highest Card</div>
+            <br>
+            <div id="hig1" name=HEARTSEVEN.png > </div>
+        </div>
+        <div class="grid-child-element green">
+           <div> Player 2</div><br><br>
+            <div class="flex">
+                <div class="i">
+                    <img class="ii2" name=SPADETWO.png src="img/i.png" onclick="cimage2(this)">
+                </div>
+                <div class="i">
+                    <img class="ii2" name=SPADEEIGHT.png src="img/i.png" onclick="cimage2(this)">
+                </div>
+                <div class="i">
+                    <img class="ii2" name=CLUBTEN.png src="img/i.png" onclick="cimage2(this)">
+                </div>
+            </div>
+
+            <br><button id="gg" onclick="disphigh2()" disabled>Show Highest Card</button>
+            <br>
+            <div id="score2" name=32 > Highest Card</div>
+            <br>
+            <div id="hig2" name=CLUBTEN.png ></div>
+        </div>
+        <div id="last">
+            <button id="win" onclick="winner()" disabled>Declare Winner</button>
+        </div><br>
+    </div>
+     <br>   <div id="winner1" name=Player_2 value=32 ></div>
+</body>
+<script src="my.js"></script>
+
+</html>
